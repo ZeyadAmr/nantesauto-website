@@ -1,0 +1,22 @@
+nav {
+  background: transparent;
+  transition: background 0.3s; }
+
+.scrolled {
+  background: #011627; }
+
+#landing-section {
+  background-image: url(/images/golfgti.jpg);
+  background-size: cover; }
+
+#find-section {
+  background-image: url(/images/blueBMW2.jpg);
+  background-size: cover; }
+
+#insurance-section {
+  background-image: url(/images/driving2.jpg);
+  background-size: cover; }
+
+#installment-section {
+  background-image: url(/images/contract2.jpg);
+  background-size: cover; }
