@@ -1,3 +1,12 @@
+button {
+  background: #2ec4b6;
+  color: #fff; }
+
+@media only screen and (max-width: 600px) {
+  .px-5 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important; } }
+
 nav {
   background: transparent;
   transition: background 0.3s; }
@@ -11,12 +20,23 @@ nav {
 
 #find-section {
   background-image: url(/images/blueBMW2.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 #insurance-section {
   background-image: url(/images/driving2.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
+  #insurance-section span {
+    color: #f71735; }
 
 #installment-section {
   background-image: url(/images/contract2.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
+  #installment-section span {
+    color: #2ec4b6; }
+
+@media only screen and (min-width: 992px) {
+  #testimonial-section .card {
+    width: 70%; } }
