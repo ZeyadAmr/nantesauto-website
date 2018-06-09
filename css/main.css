@@ -28,6 +28,18 @@ nav {
   .nav-big a {
     font-size: inherit; }
 
+@media (max-width: 992px) {
+  #navbar-content.h-0 {
+    max-height: 0px; } }
+
+#navbar-content {
+  transition: max-height 0.2s;
+  max-height: 300px;
+  overflow: hidden; }
+
+.navbar-toggler:active {
+  transform: scale(0.97); }
+
 #landing-section {
   background-image: url(../images/golfgti.jpg);
   background-size: cover; }
