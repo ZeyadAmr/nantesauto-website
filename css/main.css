@@ -5,10 +5,13 @@ button {
   background: #2ec4b6;
   color: #fff; }
 
-@media only screen and (max-width: 600px) {
-  .px-5 {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important; } }
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px; } }
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px; } }
 
 nav {
   background: transparent;
@@ -51,9 +54,6 @@ nav {
   #testimonial-cards .card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     transform: scale(1.01); }
-  @media only screen and (min-width: 992px) {
-    #testimonial-cards .card {
-      width: 60%; } }
 
 #footer {
   background: #011627; }
