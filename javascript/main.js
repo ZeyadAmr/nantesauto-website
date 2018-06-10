@@ -22,6 +22,18 @@ toggler.addEventListener("click", function () {
 
 
 // Slider
-new Siema({
+var mySiema = new Siema({
   loop: true,
+  duration: 600
 });
+document.querySelector(".prev").addEventListener("click", function () {
+  mySiema.prev();
+  clearInterval(sliderLoop);
+});
+document.querySelector(".next").addEventListener("click", function () {
+  mySiema.next();
+  clearInterval(sliderLoop);
+});
+var sliderLoop = setInterval(function () {
+  mySiema.next();
+}, 5000);

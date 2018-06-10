@@ -118,6 +118,10 @@ nav {
   #installment-section span {
     color: #2ec4b6; }
 
+@media (max-width: 768px) {
+  .prev, .next {
+    display: none; } }
+
 #footer {
   background: #011627; }
   #footer a {
@@ -128,3 +132,6 @@ nav {
   background: #010a12; }
   #footer-bottom p {
     opacity: 0.5; }
+
+.icon {
+  max-width: 25px; }
