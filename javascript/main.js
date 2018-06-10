@@ -16,6 +16,8 @@ var navbar = document.querySelector("#navbar-content");
 
 toggler.addEventListener("click", function () {
   navbar.classList.toggle("h-0");
+  if (window.scrollY < 20)
+  nav.classList.toggle("scrolled");
 });
 
 

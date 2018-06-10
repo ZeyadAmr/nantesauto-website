@@ -1,3 +1,7 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 0.75rem; } }
+
 body {
   background: #efefef; }
 
@@ -7,14 +11,25 @@ h1 {
 button {
   background: #2ec4b6;
   color: #fff; }
+  button:hover {
+    background: #1e7d74; }
 
 @media (min-width: 1400px) {
   .container {
     max-width: 1340px; } }
 
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1540px; } }
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.01); }
+  .card button {
+    padding-right: 1.2em;
+    padding-left: 1.2em; }
+
+.font-weight-bold {
+  font-weight: 600 !important; }
 
 nav {
   background: transparent;
@@ -24,13 +39,17 @@ nav {
   background: #011627; }
 
 .nav-big {
-  font-size: 1.3em; }
+  font-size: 1.3rem; }
   .nav-big a {
     font-size: inherit; }
 
 @media (max-width: 992px) {
   #navbar-content.h-0 {
     max-height: 0px; } }
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1.3rem; } }
 
 #navbar-content {
   transition: max-height 0.2s;
@@ -40,6 +59,9 @@ nav {
 .navbar-toggler:active {
   transform: scale(0.97); }
 
+.navbar-toggler:focus {
+  outline: none; }
+
 #landing-section {
   background-image: url(../images/golfgti.jpg);
   background-size: cover; }
@@ -48,6 +70,9 @@ nav {
   background-image: url(../images/blueBMW2.jpg);
   background-size: cover;
   background-attachment: fixed; }
+  #find-section .card {
+    transform: none;
+    transition: none; }
 
 #find-box {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -59,6 +84,8 @@ nav {
   position: relative; }
   #featured-section .display-4 {
     color: #f6f7f8; }
+  #featured-section .lead {
+    font-size: 1.5rem; }
 
 #featured-bg {
   height: 45%;
@@ -90,13 +117,6 @@ nav {
   background-attachment: fixed; }
   #installment-section span {
     color: #2ec4b6; }
-
-#testimonial-cards .card {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-  #testimonial-cards .card:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    transform: scale(1.01); }
 
 #footer {
   background: #011627; }
